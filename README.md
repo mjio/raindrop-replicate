@@ -31,6 +31,12 @@ print(result.created)
 - Missing local files can be repaired on the next invocation.
 - Replication state is stored in `.raindrop-replicate.json` inside the directory.
 
+### Access token and collection ID
+
+1. Open [Raindrop.io → Settings → Integrations](https://app.raindrop.io/settings/integrations) and create a new app.
+2. Create a token for the app and use the token as `RAINDROP_TOKEN` when calling the Raindrop.io API.
+3. To find your collection ID, open the collection in the Raindrop.io app and copy the number from the URL. For example, in `https://app.raindrop.io/my/123456789`, the collection ID is `123456789`.
+
 ## Development
 
 ```bash
